@@ -1,0 +1,37 @@
+body{
+  background-image: url("/static/images/back.png");
+  background-repeat: no-repeat;
+  background-size: 1367px 657px;
+  background-attachment: fixed;
+}
+
+.design{
+   font-family: 'Nothing You Could Do', cursive;
+   font-size: 22px;
+   letter-spacing: 6px;
+}
+
+.mycard{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.login_center{
+  text-align: center;
+  font-size: 27px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.login_img{
+  height: 70px;
+  margin-left: 40%;
+  margin-right: 30%;
+
+}
+
+.idk{
+  margin-left: 14%;
+  color: red;
+  /* margin-right: 30%; */
+
+}

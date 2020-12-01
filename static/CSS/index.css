@@ -1,0 +1,24 @@
+body{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/PEC_helicopter.JPG/800px-PEC_helicopter.JPG);
+  background-repeat: no-repeat;
+  background-size: 1366px 657px;
+  background-attachment: fixed;
+  opacity: 0.75;
+}
+
+
+#text1{
+  font-size:28px;
+  font-weight: 490;
+}
+
+
+.design{
+   font-family: 'Nothing You Could Do', cursive;
+   font-size: 22px;
+   letter-spacing: 6px;
+}
+
+.text2{
+   font-size: 23.3px;
+}

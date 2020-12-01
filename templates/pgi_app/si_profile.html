@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PGI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "CSS/si_profile_p.css" %}">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </head>
+
+
+
+  <body>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand design" href="#"><b>PGI</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link  " href="{% url 'pgi_app:si_profile' %}">Profile <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'pgi_app:si_request' %}">Requests</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link"  href="{% url 'logout' %}">Logout</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+<div class="card border-dark mb-3 mycard" style="max-width: 50rem;">
+  <div class="card-header welcome">Welcome {{si}}!</div>
+  <div class="card-body text-dark">
+    <h5 class="card-title">Hope you're doing great!!</h5>
+    <p class="card-text">Not in College..don't worry, you can still monitor over the requests of room bookings made by all Club Sectretaries.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card img_card" style="width: 20rem;">
+  <img class="card-img-top login_img" src="https://userpic.codeforces.com/no-title.jpg" alt="Card image cap">
+  <br>
+  <div class="card-body">
+    <h5 class="card-title">{{si}} {{ln}}</h5>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><b>Designation:</b> Club Office In-charge</li>
+    <li class="list-group-item"><b>Club: </b>Not Valid</li>
+    <li class="list-group-item"><b>E-mail:</b> <i>{{mail}}</i></li>
+  </ul>
+
+</div>
+</div>
+
+
+
+<div class="card w-25 card1">
+  <div class="card-body">
+    <h5 class="card-title">Check Requests</h5>
+    <p class="card-text">Check all the requests of room bookings made all Club Sectretaries.</p>
+    <a href="{% url 'pgi_app:si_request' %}" class="btn btn-primary">Check</a>
+  </div>
+</div>
+
+
+
+
+
+
+  </body>
+</html>

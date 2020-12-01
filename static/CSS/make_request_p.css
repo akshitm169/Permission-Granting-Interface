@@ -1,0 +1,32 @@
+
+
+.design{
+   font-family: 'Nothing You Could Do', cursive;
+   font-size: 22px;
+   letter-spacing: 6px;
+}
+
+.idk{
+  margin-left: 40%;
+  color: #db4848;
+  font-size: 20px;
+
+}
+
+
+.center_card{
+  margin-left: 11%;
+  /* margin-right: 30%; */
+}
+
+.pick{
+  text-align: center;
+
+}
+
+
+.book{
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Kalam', cursive;
+}
